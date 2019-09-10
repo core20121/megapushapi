@@ -26,7 +26,35 @@ $description = [
 ];
 
 
+//пустые значения заполенны после того как
+//в сапорте сказали "все являются обязательными"
+$create_params = [
+	'c_name'  => 'is_qweqwe',
+	'c_title' => 'FreeWebHosting',
+	'c_desc' => 'Freehostingwithoutimitsonthenumberofsites',
+	'c_url' => 'http://ststudyabroad.by/hosting/hosting/',
+	'c_country' => 'IL',
+	'c_tg' => '2', //device
+	'op_system' => '["Windows7","Windows8","Windows10"]',
+	'start_time' => '',
+	'stop_time' => '',
+	'c_image' =>  'http://bestac.kz/isa/img/111111.jpg',
+	'c_icon' => 'http://bestac.kz/isa/img/omg2.jpg',
+	'c_limit' => '200',
+	'mob_carrier' => '',
+	'cpc' => '1',
+	'blocked_list' => '[]',
+	'feeds' => '["feed1","feed10","feed36"]',
+	'link_type' => '',
+];
 
+$get_by_id = [
+	'camp_id' => '844273'
+];
+
+//$api->getAll();
+$api->getById($get_by_id);
+//$api->createCampagin($create_params);
 
 
 
