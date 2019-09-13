@@ -1,5 +1,7 @@
 <?php 
 include 'api.php';
+include 'Helper.php';
+include 'configs.php';
 
 $auth  = 'MegaApi';
 $token = 'WjFKOU51ZG5nQzN1NEdvUHQ3';
@@ -55,6 +57,12 @@ $get_by_id = [
 //$api->getAll();
 $api->getById($get_by_id);
 //$api->createCampagin($create_params);
+
+
+
+
+
+
 
 
 

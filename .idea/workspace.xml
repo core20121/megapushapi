@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eebb2e4c-0a21-4ffd-b112-9c57ab39590e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/redmegapush/orig/configs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redmegapush/orig/Helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redmegapush/orig/MyActions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redmegapush/orig/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/redmegapush/orig/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redmegapush/orig/configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/redmegapush/orig/configs.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redmegapush/orig/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/redmegapush/orig/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,37 +18,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redmegapush/orig/api.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/redmegapush/orig/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            <state relative-caret-position="84">
+              <caret line="10" selection-start-line="10" selection-end-line="27" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyActions.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/redmegapush/orig/MyActions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="71">
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
               <folding>
-                <element signature="n#__construct#0;n#MegapushApi#0;n#!!top" expanded="true" />
-                <element signature="n#getHeaders#0;n#MegapushApi#0;n#!!top" expanded="true" />
-                <element signature="n#initCurl#0;n#MegapushApi#0;n#!!top" expanded="true" />
-                <element signature="n#getAll#0;n#MegapushApi#0;n#!!top" expanded="true" />
-                <element signature="n#getById#0;n#MegapushApi#0;n#!!top" expanded="true" />
-                <element signature="n#createCampagin#0;n#MegapushApi#0;n#!!top" expanded="true" />
+                <element signature="n#createMassByCountries#0;n#MyActions#0;n#!!top" expanded="true" />
+                <element signature="n#getMainCreateParams#0;n#MyActions#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="configs.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/redmegapush/orig/configs.php">
+      <file leaf-file-name="Helper.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/redmegapush/orig/Helper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="415" column="22" selection-start-line="415" selection-start-column="22" selection-end-line="415" selection-end-column="22" />
+            <state relative-caret-position="84">
+              <caret line="4" column="61" lean-forward="true" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
+              <folding>
+                <element signature="n#getNum#0;n#Helper#0;n#!!top" expanded="true" />
+                <element signature="n#sortByCpc#0;n#Helper#0;n#!!top" expanded="true" />
+                <element signature="n#getCheapList#0;n#Helper#0;n#!!top" expanded="true" />
+                <element signature="n#getList#0;n#Helper#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redmegapush/orig/index.php">
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/redmegapush/orig/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+            <state relative-caret-position="399">
+              <caret line="28" column="9" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="28" selection-end-column="5" />
+              <folding>
+                <element signature="n#__construct#0;n#MegapushApi#0;n#!!top" expanded="true" />
+                <element signature="e#810#913#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="configs.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/redmegapush/orig/configs.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="7" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -70,6 +97,7 @@
       <find>initCurl</find>
       <find>getAll</find>
       <find>getTestParams</find>
+      <find>getExpansiveList</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -80,9 +108,11 @@
       <list>
         <option value="$PROJECT_DIR$/red_mepapush.loc/orig/api_post1.php" />
         <option value="$PROJECT_DIR$/red_mepapush.loc/orig/api.php" />
-        <option value="$PROJECT_DIR$/redmegapush/orig/api.php" />
-        <option value="$PROJECT_DIR$/redmegapush/orig/index.php" />
         <option value="$PROJECT_DIR$/redmegapush/orig/configs.php" />
+        <option value="$PROJECT_DIR$/redmegapush/orig/api.php" />
+        <option value="$PROJECT_DIR$/redmegapush/orig/Helper.php" />
+        <option value="$PROJECT_DIR$/redmegapush/orig/index.php" />
+        <option value="$PROJECT_DIR$/redmegapush/orig/MyActions.php" />
       </list>
     </option>
   </component>
@@ -97,8 +127,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.0" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="55" />
-    <option name="width" value="1134" />
+    <option name="x" value="54" />
+    <option name="width" value="1061" />
     <option name="height" value="1087" />
   </component>
   <component name="ProjectView">
@@ -133,10 +163,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../platform.loc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -162,29 +192,32 @@
       <updated>1568013411367</updated>
       <workItem from="1568013413258" duration="1102000" />
       <workItem from="1568018228299" duration="7227000" />
-      <workItem from="1568099359041" duration="4948000" />
+      <workItem from="1568099359041" duration="6250000" />
+      <workItem from="1568358841057" duration="601000" />
+      <workItem from="1568373597078" duration="5344000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13277000" />
+    <option name="totallyTimeSpent" value="20524000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.123484015" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" x="0" y="0" width="418" height="896" id="Documentation" side_tool="true" visible="true" weight="0.22822492" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15325248" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -203,15 +236,75 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/redmegapush/orig/api.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding>
+            <element signature="n#__construct#0;n#MegapushApi#0;n#!!top" expanded="true" />
+            <element signature="e#810#913#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redmegapush/orig/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redmegapush/index_bak.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="18" selection-start-line="18" selection-end-line="36" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redmegapush/orig/configs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8736">
+          <caret line="416" column="32" lean-forward="true" selection-start-line="416" selection-start-column="32" selection-end-line="416" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redmegapush/orig/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding>
+            <element signature="n#__construct#0;n#MegapushApi#0;n#!!top" expanded="true" />
+            <element signature="e#810#913#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redmegapush/orig/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redmegapush/index_bak.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="18" selection-start-line="18" selection-end-line="36" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redmegapush/orig/configs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8631">
+          <caret line="411" column="134" lean-forward="true" selection-start-line="411" selection-start-column="134" selection-end-line="411" selection-end-column="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redmegapush/orig/api.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
           <folding>
             <element signature="n#__construct#0;n#MegapushApi#0;n#!!top" expanded="true" />
-            <element signature="n#getHeaders#0;n#MegapushApi#0;n#!!top" expanded="true" />
-            <element signature="n#initCurl#0;n#MegapushApi#0;n#!!top" expanded="true" />
-            <element signature="n#getAll#0;n#MegapushApi#0;n#!!top" expanded="true" />
-            <element signature="n#getById#0;n#MegapushApi#0;n#!!top" expanded="true" />
-            <element signature="n#createCampagin#0;n#MegapushApi#0;n#!!top" expanded="true" />
+            <element signature="e#810#913#0#PHP" />
           </folding>
         </state>
       </provider>
@@ -241,15 +334,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="61" column="29" lean-forward="true" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
-          <folding>
-            <element signature="n#__construct#0;n#MegapushApi#0;n#!!top" expanded="true" />
-            <element signature="n#getHeaders#0;n#MegapushApi#0;n#!!top" expanded="true" />
-            <element signature="n#initCurl#0;n#MegapushApi#0;n#!!top" expanded="true" />
-            <element signature="n#exec#0;n#MegapushApi#0;n#!!top" expanded="true" />
-            <element signature="n#getAll#0;n#MegapushApi#0;n#!!top" expanded="true" />
-            <element signature="n#createGetParamsRow#0;n#MegapushApi#0;n#!!top" expanded="true" />
-            <element signature="n#getTestParams#0;n#MegapushApi#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -261,32 +345,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redmegapush/orig/index.php">
+    <entry file="file://$PROJECT_DIR$/redmegapush/orig/configs.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        <state relative-caret-position="84">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redmegapush/orig/Helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="61" lean-forward="true" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
+          <folding>
+            <element signature="n#getNum#0;n#Helper#0;n#!!top" expanded="true" />
+            <element signature="n#sortByCpc#0;n#Helper#0;n#!!top" expanded="true" />
+            <element signature="n#getCheapList#0;n#Helper#0;n#!!top" expanded="true" />
+            <element signature="n#getList#0;n#Helper#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/redmegapush/orig/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        <state relative-caret-position="399">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="28" selection-end-column="5" />
           <folding>
             <element signature="n#__construct#0;n#MegapushApi#0;n#!!top" expanded="true" />
-            <element signature="n#getHeaders#0;n#MegapushApi#0;n#!!top" expanded="true" />
-            <element signature="n#initCurl#0;n#MegapushApi#0;n#!!top" expanded="true" />
-            <element signature="n#getAll#0;n#MegapushApi#0;n#!!top" expanded="true" />
-            <element signature="n#getById#0;n#MegapushApi#0;n#!!top" expanded="true" />
-            <element signature="n#createCampagin#0;n#MegapushApi#0;n#!!top" expanded="true" />
+            <element signature="e#810#913#0#PHP" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redmegapush/orig/configs.php">
+    <entry file="file://$PROJECT_DIR$/redmegapush/orig/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="415" column="22" selection-start-line="415" selection-start-column="22" selection-end-line="415" selection-end-column="22" />
+        <state relative-caret-position="84">
+          <caret line="10" selection-start-line="10" selection-end-line="27" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redmegapush/orig/MyActions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="n#createMassByCountries#0;n#MyActions#0;n#!!top" expanded="true" />
+            <element signature="n#getMainCreateParams#0;n#MyActions#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

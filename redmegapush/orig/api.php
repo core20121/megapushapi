@@ -68,6 +68,9 @@ class MegapushApi
 	public function startCampagin(array $params = []) {
 		return $this->initCurl($params, static::ACTION_STOP);
 	}
+
+
+
 }
 
 ?>
