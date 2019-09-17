@@ -1,65 +1,41 @@
 <?php
 
-include 'Helper.php';
-include 'api.php';
 
 class MyActions
 {
-	const titles = [
-		'cars_a' => [],
-		"Israel car sharing",
-		"cars for israel citizens",
-		"Car Sharing",
-		"CAR SHARING",
-	];
 
-	const description = [
-		"Free minutes car sharing",
-		"Free 15 minutes from partners",
-		"30 min free for registration",
-		"30 min free on praticipation",
-		"sign up with our partners and get a bonus",
-		"how to get free minutes of car rental?",
-		"sign up and get a free 15 minutes",
-		"Free minutes",
-		"Free Kilometers",
-	];
 
-	public function createMassByCountries($api, $list_countries_cpc) {
-		$test_list = [
-			'IL' => '0,1',
-			'AX' => '0,1',
-		];
-		$cheap_list = Helper::getCheapList($list_countries_cpc);
-		$expensive_list = Helper::getExpansiveList($list_countries_cpc);
+	public static function createMassByCountries($api, $country_cpc_list, $group, $url_key, $test_mode = false) {
 
-		foreach ($cheap_list as $country => $cpc) {
-			$params = $this->getMainCreateParams($country);
-			$api->createCampagin($params);
+		foreach ($country_cpc_list as $country => $cpc) {
+			$params = Configs::getParams($group, $url_key, $cpc, $country, Configs::MODE_FIRST);
+			$create_params = $api::getCreateParams(...array_values($params));
+
+			if ($test_mode) {
+				$create_params['c_limit'] = 100;
+			}
+
+			$api->createCampagin($create_params);
+
+			if ($test_mode) {
+				exit('only one for test');
+			}
 		}
-
 	}
 
-	public function getMainCreateParams($country) {
-		$create_params = [
-			'c_name'       => 'is_qweqwe',
-			'c_title'      => 'FreeWebHosting',
-			'c_desc'       => 'Freehostingwithoutimitsonthenumberofsites',
-			'c_url'        => 'http://ststudyabroad.by/hosting/hosting/',
-			'c_country'    => 'IL',
-			'c_tg'         => '2', //device
-			'op_system'    => '["Windows7","Windows8","Windows10"]',
-			'start_time'   => '',
-			'stop_time'    => '',
-			'c_image'      => 'http://bestac.kz/isa/img/111111.jpg',
-			'c_icon'       => 'http://bestac.kz/isa/img/omg2.jpg',
-			'c_limit'      => '200',
-			'mob_carrier'  => '',
-			'cpc'          => '1',
-			'blocked_list' => '[]',
-			'feeds'        => '["feed1","feed10","feed36"]',
-			'link_type'    => '',
+	public static function runSome($api, $test_mode = false) {
+		$group = 'hosting';
+		$url_key = 'hosting2';
+
+		$test_list = [
+			'DZ' => '0,25',
 		];
+		$cheap_list = Helper::getCheapList(Configs::countries_cpc);
+		$expensive_list = Helper::getExpansiveList(Configs::countries_cpc);
+		$not_tested_list = Helper::getExcludingCountries(Statistics::dataTestedPack1());
+		$my_prefered_countries = Helper::getCountries(['PS','IL','JO','EC','TG','AW','MV']);
+
+		self::createMassByCountries($api, $my_prefered_countries, $group, $url_key, $test_mode);
 	}
 
 
