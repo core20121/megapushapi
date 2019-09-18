@@ -26,7 +26,12 @@ $vars = http_build_query(
 // curl_setopt($ch, CURLOPT_POSTFIELDS,$vars);
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
+
 $res = curl_exec($ch);
+echo '<pre>';
+    var_export($res);
+    exit;
+echo '</pre>';
 curl_close($ch);
 
 

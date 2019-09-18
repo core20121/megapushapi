@@ -5,10 +5,25 @@ include 'Configs.php';
 include 'MyActions.php';
 include 'Statistics.php';
 
-$auth  = 'MegaApi';
-$token = 'WjFKOU51ZG5nQzN1NEdvUHQ3';
-$api_key = '60b24b74';
-$api = new MegapushApi($auth, $token, $api_key);
+//$auth  = 'MegaApi';
+//$token = 'WjFKOU51ZG5nQzN1NEdvUHQ3';
+//$api_key = '60b24b74';
+
+$core2012ucozhosting_auth = [
+	'auth' => 'MegaApi',
+	'token' => 'WjFKOU51ZG5nQzN1NEdvUHQ3',
+	'api_key' => '60b24b74'
+];
+
+$steflabs_auth = [
+	'auth' => 'MegaApi',
+	'token' => 'N0FIYjFBaWV0Y0c3WUlla0k3',
+	'api_key' => '4480153b'
+];
+
+
+
+$api = new MegapushApi(...$steflabs_auth);
 
 //MyActions::createMassByCountries($api,true);
 //MyActions::createMassByCountries($api);
