@@ -4,9 +4,76 @@ class Configs
 {
 	const MODE_FIRST = 'first';
 
+	const PACK1 = [
+		[
+			'name'        => "hosting",
+			'url'         => 'http://ststudyabroad.by/hosting/hosting/',
+			'title'       => "Free Hosting",
+			'description' => "No Limits Hosting in a Few Clicks",
+			'img'         => "http://bestac.kz/mpimgs/host1.png",
+			'ico'         => "http://bestac.kz/mpimgs/host_ico4.png",
+		],
+		[
+			'name'        => "hosting2",
+			'url'         => 'http://ststudyabroad.by/hosting/hosting2/',
+			'title'       => "Free Hosting in Few Clicks",
+			'description' => "Our partners will provide you no limit plan",
+			'img'         => "http://bestac.kz/mpimgs/host1.png",
+			'ico'         => "http://bestac.kz/mpimgs/host_ico4.png",
+		],
+		[
+			'name'        => "hosting3",
+			'url'         => 'http://ststudyabroad.by/hosting/hosting2/',
+			'title'       => "Free Hosting",
+			'description' => "Get free host in 3 clicks",
+			'img'         => "http://bestac.kz/mpimgs/host1.png",
+			'ico'         => "http://bestac.kz/mpimgs/host_ico4.png",
+		],
+	];
+
+	const PACK2 = [
+		[
+			'name'        => "isb",
+			'url'         => 'http://bestac.kz/isb/',
+			'title'       => "CAR SHARING",
+			'description' => "Get free minutes in 3 clicks with our partner",
+			'img'         => "http://bestac.kz/images/carsharing/img_ready.jpg",
+			'ico'         => "http://bestac.kz/images/carsharing/ico_ready.jpg",
+		],
+		[
+			'name'        => "isb",
+			'url'         => 'http://bestac.kz/isb/',
+			'title'       => "Car Sharing free minutes",
+			'description' => "Free 30 minutes from partners in few clicks",
+			'img'         => "http://bestac.kz/images/carsharing/img_ready.jpg",
+			'ico'         => "http://bestac.kz/images/carsharing/ico_ready.jpg",
+		],
+		[
+			'name'        => "isb2",
+			'url'         => 'http://bestac.kz/isb2/',
+			'title'       => "Car Sharing Free Kilometers",
+			'description' => "Free 30 Kilometers in 3 clicks.Check partner",
+			'img'         => "http://bestac.kz/images/carsharing/img_ready.jpg",
+			'ico'         => "http://bestac.kz/images/carsharing/ico_ready.jpg",
+		],
+		[
+			'name'        => "isb3",
+			'url'         => 'http://bestac.kz/isb2/',
+			'title'       => "Car sharing 30mins free",
+			'description' => "Sign up with partners & get free 30 minutes",
+			'img'         => "http://bestac.kz/images/carsharing/img_ready.jpg",
+			'ico'         => "http://bestac.kz/images/carsharing/ico_ready.jpg",
+		],
+	];
+
 	const websites = [
 		"hosting"  => "http://ststudyabroad.by/hosting/hosting/",
 		"hosting2" => "http://ststudyabroad.by/hosting/hosting2/",
+		"hosting3" => "http://ststudyabroad.by/hosting/hosting3/",
+		"isa"      => "http://bestac.kz/isa/",
+		"carpage"  => "http://bestac.kz/isa/pages/carpage.php?image=/isa/img/cars/ford.png",
+		"isb"      => "http://bestac.kz/isb/",
+		"isb2"     => "http://bestac.kz/isb2/",
 	];
 
 	const images = [
@@ -16,7 +83,9 @@ class Configs
 	];
 
 	const icons = [
-		"hosting" => ["http://bestac.kz/mpimgs/host_ico4.png"]
+		"hosting" => [
+			"http://bestac.kz/mpimgs/host_ico4.png"
+		]
 	];
 
 	const titles = [
@@ -35,19 +104,19 @@ class Configs
 	const description = [
 		'hosting' => [
 			"No Limits Hosting in a Few Clicks",
-			"No limits free hostings with our partners",
-			"Best free hostings",
+			"No limits Free Hostings follow partners",
+			"Get free host in 3 clicks",
 		],
 		"cars"    => [
-			"Free minutes car sharing",
-			"Free 15 minutes from partners",
-			"30 min free for registration",
-			"30 min free on praticipation",
+			"Get free 30 minutes in 3 clicks. Follow our partners",
+			"Free minutes car sharing. Follow our partners.",
+			"Free 15 minutes from partners in few clicks",
+			"Free 30 minutes from partners in few clicks",
+			"Free 30 Kilometers - in 3 clicks. Check partners.",
+			"30 min free on partners praticipation",
 			"sign up with our partners and get a bonus",
 			"how to get free minutes of car rental?",
-			"sign up and get a free 15 minutes",
-			"Free minutes",
-			"Free Kilometers",
+			"sign up with partners and get a free 30 minutes",
 		],
 	];
 
@@ -573,6 +642,8 @@ class Configs
 		}
 		return $params;
 	}
+
+
 }
 
 /**

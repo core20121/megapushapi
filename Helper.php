@@ -7,8 +7,8 @@ class Helper
 	const CHEAP_LIMITER = '0,80';
 
 
-	public static function getNum($str): float {
-		return round((float)str_replace(',', '.', $str), 2);
+	public static function getNum($str): string {
+		return str_replace(',', '.', $str);
 	}
 
 	public static function sortByCpc(array $list, $limit, $action): array {
@@ -51,6 +51,45 @@ class Helper
 			}
 		}
 		return $result;
+	}
+
+	public static function getName($country, $name): string {
+		return date('d_m_y_') . $country . '_' . $name;
+	}
+
+	public static function unpackCreateParams(array $pack):array {
+		/*
+		 * $name, $title, $description, url, image, icon, country, cpc*/
+		$order = [
+			'name'        => null,
+			'title'       => null,
+			'description' => null,
+			'url'         => null,
+			'img'       => null,
+			'ico'        => null,
+			'country'     => null,
+			'cpc'         => null,
+		];
+		
+		foreach ($order as $key => $item) {
+			foreach ($pack as $k => $data) {
+				if ($key === $k) {
+					$order[$key] = $data;
+				}
+			}
+		}
+
+		if (in_array(null, $order)) {
+			$null_data = $order;
+			foreach ($null_data as $k => $item) {
+				if ($item === null) {
+					unset($null_data[$k]);
+				}
+			}
+			print_r('No create params: ' . implode('//', array_keys($null_data))); exit();
+		}
+
+		return $order;
 	}
 
 }

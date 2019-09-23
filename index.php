@@ -23,19 +23,24 @@ $steflabs_auth = [
 
 
 
-$api = new MegapushApi(...$steflabs_auth);
+$api = new MegapushApi(...array_values($steflabs_auth));
+
 
 //MyActions::createMassByCountries($api,true);
-//MyActions::createMassByCountries($api);
-MyActions::runSome($api);
-
-//$response = $api->getAll(['status' =>'running']);
-
-
+//MyActions::runSome($api);
+//$api->deleteByIds([]);
+MyActions::runByPacks($api);
 echo '<pre>';
-var_export(json_encode(Statistics::getTestedCountriesList($response)));
+    var_export($api->getResponses());
     exit;
 echo '</pre>';
+//$response = $api->getAll(['status' =>'running']);
+
+//exit;
+//echo '<pre>';
+//var_export(json_encode(Statistics::getTestedCountriesList($response)));
+//
+//echo '</pre>';
 
 
 

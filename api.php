@@ -7,8 +7,9 @@ class MegapushApi
 	private $api_token;
 	private $curl;
 	private $default_url = 'https://megapu.sh/megaApi/campaigns/';
+	private $responses = [];
 
-	const CONFIG_SLEEP = 0.5;
+	const CONFIG_SLEEP = 1;
 	const CONFIG_UNSET_FEEDS = [];
 
 	const DEVICE_MOBILE = '1';
@@ -39,7 +40,8 @@ class MegapushApi
 		];
 	}
 
-	private function initCurl(array $params, $action) {
+	public function initCurl(array $params, $action) {
+
 		$params['a'] = $action;
 		$this->curl = curl_init('https://megapu.sh/megaApi/campaigns/' . '?' . http_build_query($params));
 
@@ -54,6 +56,7 @@ class MegapushApi
 		$header_size = curl_getinfo($this->curl, CURLINFO_HEADER_SIZE);
 		$response = curl_exec($this->curl);
 		$body = substr($response, $header_size);
+		$this->responses[] = json_decode($body);
 
 		return json_decode($body);
 	}
@@ -67,12 +70,18 @@ class MegapushApi
 	}
 
 	public function createCampagin(array $params = []) {
-
 		return $this->initCurl($params, static::ACTION_CREATE);
 	}
 
 	public function deleteCampagin(array $params = []) {
 		return $this->initCurl($params, static::ACTION_DELETE);
+	}
+
+	public function deleteByIds(array $array){
+		foreach($array as $key=>$camp_id){
+			$this->deleteCampagin(['camp_id' => $camp_id]);
+		}
+		var_dump($this->getResponses());exit();
 	}
 
 	public function updateCampagin(array $params = []) {
@@ -87,8 +96,7 @@ class MegapushApi
 		return $this->initCurl($params, static::ACTION_STOP);
 	}
 
-
-	public static function getCreateParams($name, $title, $description, $url, $image, $icon, $country, $cpc): array {
+	public static function getCreateParams($name, $title, $description, $url, $img, $ico, $country, $cpc): array {
 		$create_params = [
 			'c_name'       => $name,
 			'c_title'      => $title,
@@ -99,8 +107,8 @@ class MegapushApi
 			'op_system'    => json_encode(self::OPSYS_DESC),
 			'start_time'   => '',
 			'stop_time'    => '',
-			'c_image'      => $image,
-			'c_icon'       => $icon,
+			'c_image'      => $img,
+			'c_icon'       => $ico,
 			'c_limit'      => '0',
 			'mob_carrier'  => '',
 			'blocked_list' => '[]',
@@ -131,6 +139,9 @@ class MegapushApi
 		return $feeds;
 	}
 
+	public function getResponses():array {
+		return $this->responses;
+	}
 }
 
 
